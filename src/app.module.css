@@ -80,3 +80,13 @@ h4 {
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 12rem;
+  }
+
+  .container main {
+    width: 100%;
+  }
+}
