@@ -6,3 +6,42 @@
   align-items: center;
   justify-content: center;
 }
+
+.container main {
+  width: clamp(400px, 50%, 556px);
+  background-color: #ffffff;
+  padding: 2rem;
+  padding-top: 4.5rem;
+  border-radius: 0.75rem;
+}
+
+.container .word {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 2.5rem 0;
+}
+
+.guess {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.langButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+
+  background-color: #6363db;
+  border: 2px solid #4f4fb9;
+  color: #ebebfc;
+
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}

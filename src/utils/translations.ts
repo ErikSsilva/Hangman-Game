@@ -1,0 +1,26 @@
+export const translations = {
+  pt: {
+    restart: "Deseja reiniciar o jogo?",
+    empty: "Digite uma letra!",
+    repeated: "Você já utilizou a letra",
+    win: "Parabéns! Você acertou a palavra!",
+    lose: "Você perdeu! Tente novamente!",
+    guess: "Palpite",
+    confirm: "Confirmar",
+    usedLetters: "Letras utilizadas",
+    outOf: "de",
+    tries: "tentativas",
+  },
+  en: {
+    restart: "Do you want to restart the game?",
+    empty: "Type a letter!",
+    repeated: "You already used this letter",
+    win: "Congratulations! You guessed the word!",
+    lose: "You lost! Try again!",
+    guess: "Guess",
+    confirm: "Confirm",
+    usedLetters: "Used letters",
+    outOf: "out of",
+    tries: "tries",
+  },
+};
