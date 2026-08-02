@@ -13,6 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: appear 0.5s ease-in-out forwards;
+  animation-delay: calc(0.2s + (var(--i, 0) * 0.15s));
+  opacity: 0;
 }
 
 .letterSmall {
@@ -35,4 +38,16 @@
   background-color: #ffcf62;
   border-color: #691b0a;
   color: #691b0a;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -9,6 +9,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  animation: appear 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .tip h3 {
@@ -23,4 +26,16 @@
 
 .tip > img {
   height: 2rem;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }

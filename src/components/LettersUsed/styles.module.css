@@ -2,6 +2,9 @@
   width: 100%;
   margin-top: 3.25rem;
   border-top: 1px dashed #c3c3c3;
+  animation: appearAndScale 0.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 .lettersUsed > h5 {
@@ -15,4 +18,16 @@
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+}
+
+@keyframes appearAndScale {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

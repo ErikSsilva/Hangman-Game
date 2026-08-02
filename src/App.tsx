@@ -1,4 +1,4 @@
-import { WORDS, fetchDatamuseWord } from "./utils/words";
+import { WORDS } from "./utils/words";
 import type { Challenge } from "./utils/words";
 import { useEffect, useState } from "react";
 import { translations } from "./utils/translations";
@@ -86,14 +86,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const getWord = async () => {
-      const randomWord = await fetchDatamuseWord();
-      console.log("Palavra obtida da API:", randomWord);
-    };
-    getWord();
-  }, []);
-
-  useEffect(() => {
     if (!challenge) {
       return;
     }
@@ -138,12 +130,13 @@ export default function App() {
                 key={index}
                 value={letterUsed?.value}
                 color={letterUsed?.correct ? "correct" : "default"}
+                index={index}
               />
             );
           })}
         </div>
 
-        <h4>{translations[lang].guess}</h4>
+        <h4 className="guessText">{translations[lang].guess}</h4>
 
         <div className={styles.guess}>
           <Input

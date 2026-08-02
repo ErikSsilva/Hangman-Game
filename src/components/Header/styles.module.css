@@ -7,6 +7,9 @@
 
 .container > img {
   height: 3.75rem;
+  animation: appear 0.5s ease-in-out forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
 }
 
 .container > header {
@@ -14,11 +17,17 @@
   display: flex;
   justify-content: space-between;
   padding: 3.25rem 0;
+  animation: appear 0.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .container > header button {
   background: transparent;
   border: none;
+  animation: appear 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .container > header img:hover {
@@ -41,4 +50,16 @@
 .container > header span strong {
   font-size: 1.37rem;
   color: #e8891c;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
